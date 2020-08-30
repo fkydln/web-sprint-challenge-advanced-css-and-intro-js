@@ -28,8 +28,16 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+        Font size should not be set to a specific fonts, we should set it by using rems. We should use percentages in our images, we should also use percentages in our divs and sections, so they will be available for many devices which has different size of screens.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+        it's a data storage, information storage, it's like a wardrop that we can throw(assign) anything we want. such as a string, number, boolean(tru/false) or null. so we can use that information later in our code.
+
 4. What is the purpose of using functions in code?
+
+        It's essential to distribute the work load. so if we have any issues in our code and we know which function isn't working, so we can just edit/customize that part. Also it has clear understanding to other developers or later on for us too.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
