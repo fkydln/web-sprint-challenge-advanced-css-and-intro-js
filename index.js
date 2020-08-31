@@ -266,7 +266,7 @@ function get20s(array){
 
 get20s(artists);
 
-console.clear();
+
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
@@ -297,7 +297,7 @@ function removeArtist(array,indexDelete) {
   
   removeArtist(artists,2);
  
-
+  console.clear();
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. 
 Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -312,11 +312,25 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(newObj){
 
-    /* Code here */
+    artists.unshift(meObj);
+    
 
-  }
+  return console.log(artists[0]);
+}
+
+var meObj = {
+  id:20,
+  name: "faz-kay",
+  years: 1997-2020,
+  genre: "coding since was born till die",
+  nationality: "from somewhere around the world",
+  bio: "is lorem really ipsum?"
+}
+
+addArtist(meObj);
+
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
