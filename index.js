@@ -275,13 +275,27 @@ console.clear();
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset and log the number 19. 
  * 
- * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
+ * Note that sucessfully invoking this function multiple times without refreshing your browser 
+ * will continuously remove artists from the array until there are none left. If you refresh your browser, 
+ * the data will reset.  
 */
-function removeArtist(array,) {
-    /* code here */
+  var indexDelete;
+
+function removeArtist(array,indexDelete) {
+  
+  for (let i = 0; i < array.length; i++) {
+    
+    //delete array[i];
+
+
+  }
+   array.splice(indexDelete,1);
+
+  return console.log(array);
+
   }
   
-  removeArtist(artists,index);
+  removeArtist(artists,2);
  
 
 /**
