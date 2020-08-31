@@ -155,5 +155,7 @@ button:hover{
     max-width: 70%;
     margin: auto;
 }
-
+nav a{
+    padding: 5%;
+}
 }
