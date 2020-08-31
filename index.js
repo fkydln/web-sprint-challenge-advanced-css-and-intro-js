@@ -295,9 +295,9 @@ function removeArtist(array,indexDelete) {
 
   }
   
-  removeArtist(artists,2);
+  removeArtist(artists,1  );
  
-  console.clear();
+  
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. 
 Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -323,7 +323,7 @@ function addArtist(newObj){
 var meObj = {
   id:20,
   name: "faz-kay",
-  years: 1997-2020,
+  years: "1997-2020",
   genre: "coding since was born till die",
   nationality: "from somewhere around the world",
   bio: "is lorem really ipsum?"
@@ -331,7 +331,7 @@ var meObj = {
 
 addArtist(meObj);
 
-
+console.clear();
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
@@ -340,13 +340,21 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(array){
 
-  /* Code here */
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].paintings > 100) {
+      
+      console.log(array[i].name);
+    }  
+
+  }
+
+  
 
 }
 
-
+lotsOfArt(artists);
 
 // 🎨🎨 STRETCH 🎨🎨//
 
