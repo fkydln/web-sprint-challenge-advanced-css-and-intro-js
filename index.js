@@ -251,10 +251,11 @@ function get20s(array){
     for (let i = 0; i < array.length; i++) {
        arraySplitted[i] = array[i].years.split(" - ");
     }
-
+var answerAsArray = [];
   for (let i = 0; i < array.length; i++) {
     if (arraySplitted[i][0]>1900) {
-      console.log( array[i].name);
+      answerAsArray.unshift(array[i].name);
+      console.log( answerAsArray);
     }  
   }
   for (let i = 0; i < arraySplitted.length; i++) {
@@ -351,7 +352,7 @@ function lotsOfArt(array){
 }
 
 lotsOfArt(artists);
-console.clear();
+
 // 🎨🎨 STRETCH 🎨🎨//
 
 
