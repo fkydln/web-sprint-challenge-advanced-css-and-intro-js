@@ -233,6 +233,7 @@ function getArtistByIndex(array, index) {
     return console.log("The artist at index " + index + " is " + array[index].name);  
   }
   getArtistByIndex(artists,[0]);
+
   
   /**
 
@@ -243,17 +244,29 @@ and died in 20th century (1900-2000) example born in 1901
 and died in 1959 - included / born in 1889 and died in 1925 not included - 
 should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(){
+function get20s(array){
 
-  if (condition) {
-    
+  //I'm splitting the years below because we will work on just years. So we needed to get rid of a part of string which is " - ".
+   var arraySplitted = []
+    for (let i = 0; i < array.length; i++) {
+       arraySplitted[i] = array[i].years.split(" - ");
+    }
+
+  for (let i = 0; i < array.length; i++) {
+    if (arraySplitted[i][0]>1900) {
+      console.log( array[i].name);
+    }  
   }
-
-  return console.log(century20[]);
-
+  for (let i = 0; i < arraySplitted.length; i++) {
+    //console.log(arraySplitted[i]); worked out.
+  }
+  //console.log(arraySplitted[0][0]); testing if my code works
+  //return console.log(array[0].years);
 }
 
+get20s(artists);
 
+console.clear();
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
@@ -264,10 +277,11 @@ function get20s(){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
+function removeArtist(array,) {
     /* code here */
   }
   
+  removeArtist(artists,index);
  
 
 /**
