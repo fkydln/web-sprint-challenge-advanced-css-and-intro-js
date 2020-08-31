@@ -135,6 +135,25 @@ button:hover{
     width:100%;
 }
 
-@media (max-width: 500px){
+@media screen and (max-width: 500px){
+.artists-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: column;
     
+}
+#right{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin: auto;
+}
+#left{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin: auto;
+}
+
 }

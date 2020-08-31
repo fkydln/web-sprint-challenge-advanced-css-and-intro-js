@@ -331,7 +331,7 @@ var meObj = {
 
 addArtist(meObj);
 
-console.clear();
+
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
@@ -346,16 +346,12 @@ function lotsOfArt(array){
     if (array[i].paintings > 100) {
       
       console.log(array[i].name);
-    }  
-
+    } 
   }
-
-  
-
 }
 
 lotsOfArt(artists);
-
+console.clear();
 // 🎨🎨 STRETCH 🎨🎨//
 
 
