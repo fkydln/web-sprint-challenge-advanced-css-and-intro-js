@@ -291,7 +291,7 @@ function removeArtist(array,indexDelete) {
   }
    array.splice(indexDelete,1);
 
-  return console.log(array);
+  return console.log(array.length);
 
   }
   
@@ -299,7 +299,8 @@ function removeArtist(array,indexDelete) {
  
 
 /**
-/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. 
+Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
 For example, you could add the following information: 
 id: 20,
